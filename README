@@ -1,0 +1,6 @@
+ProPatPile is a free software project for creating custom-tailored sewing patterns. Based on the Processing library, this Java Application exports the pattern in a dxf-format. The software contains until now two basic patterns for pants and for pullovers/t-shirts and a pattern for overalls. The software also dispenses with curves for the armhole, the back and the hip-waist line, until now.  
+In a GUI, based on JavaSwing, one can enter his proper measurements (maybe a discription of where and how to measure would help for this) and choose from the existing patterns what to draw. Ones measured the values can be saved in a text file and be loaded later. Transmitting the values will cause the actual Processing-code (the setup and draw functions) to execute. 
+To realise this structure, i wrote over the Processing propers PApplet.main entry with a main function, which calls the createAndShowGUI.creating method, in which the PApplet.main function is called to execute setup and draw.
+Other output formats are also supported by Processing, but not as suitable as .dxf, because the proportions are clearly defined for the .dxf export(1px => 1mm).
+
+
